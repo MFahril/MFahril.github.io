@@ -85,23 +85,22 @@ a{color:var(--accent);text-underline-offset:3px}
 .actions{display:flex;flex-wrap:wrap;gap:10px}
 @media (max-width:820px){.hero .wrap{grid-template-columns:1fr;gap:28px}.hero .photo{width:150px;height:150px;border-radius:20px;order:-1}.hero{padding-top:40px}}
 .hl{padding:0 0 64px}
-.hl-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-bottom:16px}
-.hl-item{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px;text-decoration:none;color:var(--ink)}
+.hl-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-bottom:22px}
+.hl-item{display:block;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 18px;text-decoration:none;color:var(--ink)}
 .hl-item:hover{border-color:var(--g-accent)}
-.hl-mark{width:28px;height:6px;border-radius:3px;background:var(--g-accent);margin-bottom:16px}
-.hl-item h3{font-size:22px;letter-spacing:-.02em;line-height:1.1;margin:0 0 8px;font-weight:800}
-.hl-item p{margin:0 0 16px;color:var(--muted);font-size:15.5px}
-.hl-link{margin-top:auto;font-size:14px;font-weight:600;color:var(--ink)}
-.awards{list-style:none;margin:0 0 24px;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
-.awards li{display:flex;gap:12px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
-.aw-mark{flex:none;width:12px;height:12px;border-radius:3px;background:var(--g-accent);margin-top:6px}
-.awards b{display:block;font-weight:700}
-.awards span{color:var(--muted);font-size:15px}
+.hl-mark{display:block;width:24px;height:5px;border-radius:3px;background:var(--g-accent);margin-bottom:10px}
+.hl-item h3{font-size:18px;letter-spacing:-.015em;line-height:1.15;margin:0 0 4px;font-weight:800}
+.hl-item p{margin:0;color:var(--muted);font-size:14.5px;line-height:1.45}
+.awards{list-style:none;margin:0 0 22px;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.awards li{display:flex;gap:8px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 14px 6px 10px;font-size:14.5px}
+.aw-mark{flex:none;width:10px;height:10px;border-radius:50%;background:var(--g-accent)}
+.awards b{font-weight:700}
+.awards div span{color:var(--muted);margin-left:6px}
 .chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
 .chips li{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:6px 14px;font-size:15px}
 .sub-h{font-size:15px;font-weight:700;margin:0 0 12px;color:var(--muted)}
-@media (max-width:1000px){.hl-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.awards{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:560px){.hl-grid,.awards{grid-template-columns:1fr}}
+@media (max-width:1000px){.hl-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.hl-grid{grid-template-columns:1fr}}
 .sec-title{padding:64px 0 28px;border-top:1px solid var(--line)}
 .sec-title h2{font-size:clamp(28px,3.2vw,38px);letter-spacing:-.025em;margin:0;font-weight:800}
 /* game bands */
@@ -141,7 +140,7 @@ details.more[open] summary::after{content:"−"}
 .more-in{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 48px;padding:4px 0 26px}
 .more-in h4{margin:0 0 6px;font-size:16px}
 .more-in p{margin:0;color:var(--g-ink);opacity:.88;font-size:16px;max-width:60ch}
-@media (max-width:900px){.g-top,.g-mid{grid-template-columns:1fr;gap:32px}.g-mid{margin-top:44px}.game{padding:60px 0 48px}.more-in{grid-template-columns:1fr}.art{margin:24px 12px 12px}.st{width:calc(var(--w,100px)*.62)}.st.corner{display:none}}
+@media (max-width:900px){.g-top,.g-mid{grid-template-columns:1fr;gap:32px}.g-mid{margin-top:44px}.game{padding:60px 0 48px}.more-in{grid-template-columns:1fr}.art{margin:24px 12px 12px}.st{width:calc(var(--w,100px)*.62)}.st.corner{display:none}.st-wi-plane{top:-46px!important;right:-10px!important}}
 @media (max-width:520px){.shots{grid-template-columns:1fr 1fr}.shots .shot:nth-child(3){grid-column:1 / -1}}
 dialog.lb{border:0;padding:0;background:transparent;max-width:min(1200px,94vw);max-height:90vh}
 dialog.lb::backdrop{background:rgba(10,12,14,.82)}
@@ -194,10 +193,10 @@ footer{padding:0 0 40px;color:var(--muted);font-size:13.5px}
 <section class="hl" id="skills"><div class="wrap">
 <h2 class="sr">Highlights</h2>
 <div class="hl-grid">
-<a class="hl-item" data-game="zo" href="#zero-one"><span class="hl-mark"></span><h3>2 games on Steam</h3><p>WING-IT and Zero One Protocol, with Steamworks.NET leaderboards and achievements.</p><span class="hl-link">WING-IT, Zero One Protocol</span></a>
-<a class="hl-item" data-game="wi" href="#zero-one"><span class="hl-mark"></span><h3>Multi-gamepad co-op</h3><p>Each player on their own gamepad, keyboard or touch, with fallback when a controller disconnects.</p><span class="hl-link">Zero One Protocol, WING-IT</span></a>
-<a class="hl-item" data-game="lm" href="#work"><span class="hl-mark"></span><h3>Gameplay systems</h3><p>AI, pathfinding, bosses, puzzle engines and game economies across 9 games.</p><span class="hl-link">Little Mayor, Ice Tea Tycoon</span></a>
-<a class="hl-item" data-game="ac" href="#tools"><span class="hl-mark"></span><h3>Unity tools</h3><p>Two editor packages with custom Inspectors, Scene-view tools and 600+ automated tests.</p><span class="hl-link">Auto Collider, LitMotion Tween Editor</span></a>
+<a class="hl-item" data-game="zo" href="#zero-one"><span class="hl-mark"></span><h3>2 games on Steam</h3><p>WING-IT and Zero One Protocol, with Steam leaderboards.</p></a>
+<a class="hl-item" data-game="lm" href="#little-mayor"><span class="hl-mark"></span><h3>Gameplay systems</h3><p>AI, pathfinding, bosses, puzzles and economies across 9 games.</p></a>
+<a class="hl-item" data-game="ac" href="#tools"><span class="hl-mark"></span><h3>Unity tools</h3><p>Two editor packages with custom Inspectors and 600+ tests.</p></a>
+<a class="hl-item" data-game="wi" href="#wing-it"><span class="hl-mark"></span><h3>Game feel</h3><p>Tweened placement, timed attack warnings and damage feedback.</p></a>
 </div>
 <h3 class="sub-h">Awards</h3>
 <ul class="awards"><li data-game="lm"><span class="aw-mark"></span><div><b>2nd Place, Gameseed 2026</b><span>Little Mayor</span></div></li><li data-game="wi"><span class="aw-mark"></span><div><b>1st Place, GIMERSIA 2025</b><span>WING-IT</span></div></li><li data-game="wi"><span class="aw-mark"></span><div><b>Best Visual, GIMERSIA 2025</b><span>WING-IT</span></div></li><li data-game="tt"><span class="aw-mark"></span><div><b>1st Place, KMIPN VII 2025</b><span>Ice Tea Tycoon</span></div></li><li data-game="ns"><span class="aw-mark"></span><div><b>Top 6, Gameseed 2025</b><span>Logic Shield</span></div></li><li data-game="zo"><span class="aw-mark"></span><div><b>Finalist, GEMASTIK XVIII</b><span>Zero One Protocol</span></div></li></ul>
@@ -210,7 +209,7 @@ footer{padding:0 0 40px;color:var(--muted);font-size:13.5px}
 <div class="g-top">
 <div class="g-main"><p class="g-info">Team of 5, 2026</p><h3>Little Mayor</h3><p class="g-pitch">A cozy city builder on a child’s bedroom floor.</p><div class="badges"><span class="badge">2nd Place, Gameseed 2026</span></div>
 <p class="g-role"><span>My role</span>Lead gameplay systems programmer</p><div class="g-links"><a class="btn" href="https://a-fair-studio.itch.io/little-mayor" target="_blank" rel="noopener">Play in browser</a></div></div>
-<div class="art"><img class="key" src="img/lm-key.webp" alt="Little Mayor key art" loading="lazy"><img class="st" src="img/lm-logo.webp" alt="" aria-hidden="true" style="top:-34px;left:-30px;--w:170px;--r:-7deg" loading="lazy"><img class="st" src="img/lm-house.webp" alt="" aria-hidden="true" style="top:-26px;right:-18px;--w:96px;--r:9deg" loading="lazy"><img class="st" src="img/lm-roo.webp" alt="" aria-hidden="true" style="bottom:-30px;right:6%;--w:78px;--r:6deg" loading="lazy"><img class="st" src="img/lm-villager.webp" alt="" aria-hidden="true" style="bottom:-24px;left:-14px;--w:70px;--r:-8deg" loading="lazy"></div>
+<div class="art"><img class="key" src="img/lm-key.webp" alt="Little Mayor key art" loading="lazy"><img class="st st-lm-logo" src="img/lm-logo.webp" alt="" aria-hidden="true" style="top:-34px;left:-30px;--w:170px;--r:-7deg" loading="lazy"><img class="st st-lm-house" src="img/lm-house.webp" alt="" aria-hidden="true" style="top:-26px;right:-18px;--w:96px;--r:9deg" loading="lazy"><img class="st st-lm-roo" src="img/lm-roo.webp" alt="" aria-hidden="true" style="bottom:-30px;right:6%;--w:78px;--r:6deg" loading="lazy"><img class="st st-lm-villager" src="img/lm-villager.webp" alt="" aria-hidden="true" style="bottom:-24px;left:-14px;--w:70px;--r:-8deg" loading="lazy"></div>
 </div>
 <div class="g-mid">
 <div><ul class="pts"><li>A* pathfinding that prefers roads and never strands a resident</li><li>Resident AI driven by one priority-based decision ladder</li><li>Goods economy where cargo is never lost or sold twice</li><li>Custom URP outline renderer, cheap enough for WebGL</li></ul><p class="g-foot">Unity 6, C#, URP, HLSL, Cinemachine 3<br>Team includes Raya Ramadan, Irvan and IzzaAA-hub (art)</p></div>
@@ -222,7 +221,7 @@ footer{padding:0 0 40px;color:var(--muted);font-size:13.5px}
 <div class="g-top">
 <div class="g-main"><p class="g-info">Team of 5, 2025–2026</p><h3>WING-IT</h3><p class="g-pitch">A paper-craft toy-plane shoot-’em-up with local co-op and multi-phase bosses.</p><div class="badges"><span class="badge">1st Place, GIMERSIA 2025</span><span class="badge">Best Visual, GIMERSIA 2025</span><span class="badge">On Steam</span></div>
 <p class="g-role"><span>My role</span>Combat and gameplay programmer</p><div class="g-links"><a class="btn" href="https://store.steampowered.com/app/4201740/WINGIT/" target="_blank" rel="noopener">View on Steam</a><a class="btn ghost" href="https://a-fair-studio.itch.io/wing-it" target="_blank" rel="noopener">itch.io</a></div></div>
-<div class="art"><img class="key" src="img/wi-key.webp" alt="WING-IT key art" loading="lazy"><img class="st" src="img/wi-plane.webp" alt="" aria-hidden="true" style="top:-48px;right:-26px;--w:190px;--r:-8deg" loading="lazy"><img class="st" src="img/wi-crayon.webp" alt="" aria-hidden="true" style="top:-22px;left:-26px;--w:92px;--r:-24deg" loading="lazy"><img class="st" src="img/wi-soldier.webp" alt="" aria-hidden="true" style="bottom:-30px;left:-18px;--w:96px;--r:-4deg" loading="lazy"><img class="st" src="img/wi-cannon.webp" alt="" aria-hidden="true" style="bottom:-26px;right:8%;--w:72px;--r:10deg" loading="lazy"></div>
+<div class="art"><img class="key" src="img/wi-key.webp" alt="WING-IT key art" loading="lazy"><img class="st st-wi-plane" src="img/wi-plane.webp" alt="" aria-hidden="true" style="top:-78px;right:-70px;--w:160px;--r:-8deg" loading="lazy"><img class="st st-wi-crayon" src="img/wi-crayon.webp" alt="" aria-hidden="true" style="top:-22px;left:-26px;--w:92px;--r:-24deg" loading="lazy"><img class="st st-wi-soldier" src="img/wi-soldier.webp" alt="" aria-hidden="true" style="bottom:-30px;left:-18px;--w:96px;--r:-4deg" loading="lazy"><img class="st st-wi-cannon" src="img/wi-cannon.webp" alt="" aria-hidden="true" style="bottom:-26px;right:8%;--w:72px;--r:10deg" loading="lazy"></div>
 </div>
 <div class="g-mid">
 <div><ul class="pts"><li>Multi-phase boss framework used by both bosses</li><li>Attack sequencer designers edit in the Inspector</li><li>Pooled bullets and waves, co-op boss targeting</li><li>Six weapons and gamepad-friendly menus</li></ul><p class="g-foot">Unity 6, C#, URP, Input System, Cinemachine 3<br>Team includes Raya Ramadan, Irvan and IzzaAA-hub (art)</p></div>
@@ -234,7 +233,7 @@ footer{padding:0 0 40px;color:var(--muted);font-size:13.5px}
 <div class="g-top">
 <div class="g-main"><p class="g-info">Team of 5, 2025–2026</p><h3>Zero One Protocol</h3><p class="g-pitch">A co-op logic-gate puzzle platformer.</p><div class="badges"><span class="badge">Finalist, GEMASTIK XVIII</span><span class="badge">On Steam</span></div>
 <p class="g-role"><span>My role</span>Gameplay and platform programmer</p><div class="g-links"><a class="btn" href="https://store.steampowered.com/app/4138940/Zero_One_Protocol/" target="_blank" rel="noopener">View on Steam</a></div></div>
-<div class="art"><img class="key" src="img/zo-key.webp" alt="Zero One Protocol key art" loading="lazy"><img class="st" src="img/zo-chars.webp" alt="" aria-hidden="true" style="bottom:-40px;right:-24px;--w:200px;--r:0deg" loading="lazy"></div>
+<div class="art"><img class="key" src="img/zo-key.webp" alt="Zero One Protocol key art" loading="lazy"><img class="st st-zo-chars" src="img/zo-chars.webp" alt="" aria-hidden="true" style="bottom:-40px;right:-24px;--w:200px;--r:0deg" loading="lazy"></div>
 </div>
 <div class="g-mid">
 <div><ul class="pts"><li>Multi-gamepad co-op input with disconnect fallback</li><li>Steamworks.NET leaderboards and achievements</li><li>Character-swap mechanic built on object pooling</li><li>Builds for Windows, Steam Deck, macOS, Android and iOS</li></ul><p class="g-foot">Unity 6, C#, Input System, Cinemachine, Steamworks.NET<br>With Raya Ramadan, Irvan, Muhammad Khalish Zhafran and Abdullah Iskandar</p></div>
