@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>M. Fahril Ilmi, Gameplay &amp; Tools Programmer</title>
 <meta name="description" content="M. Fahril Ilmi, a Unity gameplay and tools programmer from Surabaya. Two games on Steam, six competition awards.">
+<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -65,6 +66,12 @@ a{color:var(--accent);text-underline-offset:3px}
 .top nav{display:flex;gap:22px}
 .top nav a{color:var(--muted);text-decoration:none;font-size:15px;white-space:nowrap}
 .top nav a:hover{color:var(--ink)}
+.right{display:flex;align-items:center;gap:18px}
+.theme{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;padding:0}
+.theme:hover{border-color:var(--ink)}
+.theme .sun{display:none}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .theme .sun{display:block}:root:not([data-theme="light"]) .theme .moon{display:none}}
+:root[data-theme="dark"] .theme .sun{display:block}:root[data-theme="dark"] .theme .moon{display:none}
 @media (max-width:560px){.top nav .opt{display:none}.top nav{gap:16px}}
 .btn{display:inline-flex;align-items:center;padding:11px 18px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;border:1.5px solid var(--line);color:var(--ink);background:var(--surface)}
 .btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
@@ -166,7 +173,7 @@ footer{padding:0 0 40px;color:var(--muted);font-size:13.5px}
 <body>
 <header class="top"><div class="wrap">
 <a class="brand" href="#top">M. Fahril Ilmi</a>
-<nav aria-label="Sections"><a href="#work">Games</a><a href="#tools">Tools</a><a href="#more" class="opt">More</a><a href="#contact">Contact</a></nav>
+<div class="right"><nav aria-label="Sections"><a href="#work">Games</a><a href="#tools">Tools</a><a href="#more" class="opt">More</a><a href="#contact">Contact</a></nav><button class="theme" id="themeBtn" type="button" aria-label="Switch between light and dark mode" title="Light / dark mode"><svg class="moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M20.7 14.6A8.5 8.5 0 0 1 9.4 3.3a.75.75 0 0 0-1-.9A10 10 0 1 0 21.6 15.6a.75.75 0 0 0-.9-1Z"/></svg><svg class="sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></g></svg></button></div>
 </div></header>
 <main id="top">
 <section class="hero"><div class="wrap">
@@ -270,6 +277,11 @@ footer{padding:0 0 40px;color:var(--muted);font-size:13.5px}
 <footer><div class="wrap">Team projects credit my teammates. Art, models and audio belong to their creators.</div></footer>
 <dialog class="lb" id="lb" aria-label="Screenshot"><img alt=""><button type="button">Close</button></dialog>
 <script>
+(function(){
+  var b=document.getElementById('themeBtn'),r=document.documentElement,mq=matchMedia('(prefers-color-scheme: dark)');
+  function cur(){var t=r.getAttribute('data-theme');return t==='dark'||t==='light'?t:(mq.matches?'dark':'light');}
+  b.addEventListener('click',function(){var n=cur()==='dark'?'light':'dark';r.setAttribute('data-theme',n);try{localStorage.setItem('theme',n)}catch(e){}});
+})();
 (function(){
   var d=document.getElementById('lb'); if(!d||!d.showModal) return;
   var im=d.querySelector('img');
