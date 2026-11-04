@@ -11,20 +11,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#F4F4F1;--surface:#FFFFFF;--ink:#1B2220;--muted:#56615C;--line:#D9DDD6;--accent:#2C47D6;--accent-ink:#FFFFFF;--sans:"Schibsted Grotesk","Helvetica Neue",Arial,sans-serif;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14191B;--surface:#1B2225;--ink:#E7ECE9;--muted:#9BA7A1;--line:#2D373A;--accent:#8C9DFF;--accent-ink:#10153A;color-scheme:dark}
-:root:not([data-theme="light"]) [data-game="lm"]{--g-bg:#1B2A47;--g-surface:#22355A;--g-ink:#F5E9D8;--g-muted:#B9C3D8;--g-line:#34507A;--g-accent:#F2A35F;--g-accent-ink:#2A1405;--g-alt:#8FB0F0;--g-alt-ink:#0F1C38;}
-:root:not([data-theme="light"]) [data-game="wi"]{--g-bg:#0F2A33;--g-surface:#163843;--g-ink:#E4F4F5;--g-muted:#9CC4CA;--g-line:#24505A;--g-accent:#FF6E61;--g-accent-ink:#2A0705;--g-alt:#8FD07E;--g-alt-ink:#0E2208;}
-:root:not([data-theme="light"]) [data-game="zo"]{--g-bg:#160D0D;--g-surface:#231616;--g-ink:#F2ECE8;--g-muted:#BFA9A4;--g-line:#3A2424;--g-accent:#8BE04E;--g-accent-ink:#0E1A05;--g-alt:#D9473F;--g-alt-ink:#FFFFFF;}
-:root:not([data-theme="light"]) [data-game="tt"]{--g-bg:#1C2716;--g-surface:#25331E;--g-ink:#F8F3DE;--g-muted:#B9C2A4;--g-line:#3A4B30;--g-accent:#9BCB5A;--g-accent-ink:#15200C;--g-alt:#E0705C;--g-alt-ink:#2A0A04;}
-:root:not([data-theme="light"]) [data-game="it"]{--g-bg:#19152B;--g-surface:#221C3A;--g-ink:#ECE7FF;--g-muted:#A9A1CE;--g-line:#352D57;--g-accent:#AD9BFF;--g-accent-ink:#160F33;--g-alt:#AD9BFF;--g-alt-ink:#160F33;}
-:root:not([data-theme="light"]) [data-game="ac"]{--g-bg:#122019;--g-surface:#182A21;--g-ink:#DFF3E5;--g-muted:#93B9A0;--g-line:#26402F;--g-accent:#5FE08F;--g-accent-ink:#06200F;--g-alt:#5FE08F;--g-alt-ink:#06200F;}
-:root:not([data-theme="light"]) [data-game="lt"]{--g-bg:#24111D;--g-surface:#2E1726;--g-ink:#F9E3F0;--g-muted:#C79DB8;--g-line:#47253A;--g-accent:#FF7CC8;--g-accent-ink:#33071F;--g-alt:#FF7CC8;--g-alt-ink:#33071F;}
-:root:not([data-theme="light"]) [data-game="go"]{--g-bg:#172015;--g-surface:#1F2A1C;--g-ink:#E5EEDF;--g-muted:#9DAE94;--g-line:#303E2B;--g-accent:#FF9A45;--g-accent-ink:#2A1200;--g-alt:#FF9A45;--g-alt-ink:#2A1200;}
-:root:not([data-theme="light"]) [data-game="ts"]{--g-bg:#141921;--g-surface:#1B222C;--g-ink:#E4E9F0;--g-muted:#98A3B3;--g-line:#2C3542;--g-accent:#FFC53D;--g-accent-ink:#2B1C00;--g-alt:#FFC53D;--g-alt-ink:#2B1C00;}
-:root:not([data-theme="light"]) [data-game="nu"]{--g-bg:#251316;--g-surface:#2F1A1E;--g-ink:#FBE6E8;--g-muted:#C9A0A7;--g-line:#47282D;--g-accent:#FF7D93;--g-accent-ink:#33070F;--g-alt:#FF7D93;--g-alt-ink:#33070F;}
-:root:not([data-theme="light"]) [data-game="ti"]{--g-bg:#1F130D;--g-surface:#2A1A12;--g-ink:#FFE8DA;--g-muted:#CC9E86;--g-line:#46291C;--g-accent:#FF7D45;--g-accent-ink:#2E0E00;--g-alt:#FF7D45;--g-alt-ink:#2E0E00;}
-:root:not([data-theme="light"]) [data-game="ns"]{--g-bg:#1B2225;--g-surface:#232B2F;--g-ink:#E7ECE9;--g-muted:#9BA7A1;--g-line:#2D373A;--g-accent:#9BA7A1;--g-accent-ink:#14191B;--g-alt:#9BA7A1;--g-alt-ink:#14191B;}
-}
 :root[data-theme="dark"]{--bg:#14191B;--surface:#1B2225;--ink:#E7ECE9;--muted:#9BA7A1;--line:#2D373A;--accent:#8C9DFF;--accent-ink:#10153A;color-scheme:dark}
 [data-game="lm"]{--g-bg:#F6EBDD;--g-surface:#FFF8EF;--g-ink:#22345F;--g-muted:#6B5B4A;--g-line:#E6D3BC;--g-accent:#C8412B;--g-accent-ink:#FFFFFF;--g-alt:#3E5FA8;--g-alt-ink:#FFFFFF;}
 [data-game="wi"]{--g-bg:#D9EFF0;--g-surface:#F2FAFA;--g-ink:#1E3440;--g-muted:#486570;--g-line:#ABD5D8;--g-accent:#C8363B;--g-accent-ink:#FFFFFF;--g-alt:#4F8A43;--g-alt-ink:#FFFFFF;}
@@ -70,7 +56,6 @@ a{color:var(--accent);text-underline-offset:3px}
 .theme{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;padding:0}
 .theme:hover{border-color:var(--ink)}
 .theme .sun{display:none}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .theme .sun{display:block}:root:not([data-theme="light"]) .theme .moon{display:none}}
 :root[data-theme="dark"] .theme .sun{display:block}:root[data-theme="dark"] .theme .moon{display:none}
 @media (max-width:560px){.top nav .opt{display:none}.top nav{gap:16px}}
 .btn{display:inline-flex;align-items:center;padding:11px 18px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;border:1.5px solid var(--line);color:var(--ink);background:var(--surface)}
@@ -91,12 +76,12 @@ a{color:var(--accent);text-underline-offset:3px}
 .hl-mark{display:block;width:24px;height:5px;border-radius:3px;background:var(--g-accent);margin-bottom:10px}
 .hl-item h3{font-size:18px;letter-spacing:-.015em;line-height:1.15;margin:0 0 4px;font-weight:800}
 .hl-item p{margin:0;color:var(--muted);font-size:14.5px;line-height:1.45}
-.awards{list-style:none;margin:0 0 22px;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.awards{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
 .awards li{display:flex;gap:8px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 14px 6px 10px;font-size:14.5px}
 .aw-mark{flex:none;width:10px;height:10px;border-radius:50%;background:var(--g-accent)}
 .awards b{font-weight:700}
 .awards div span{color:var(--muted);margin-left:6px}
-.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0 0 26px;padding:0}
 .chips li{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:6px 14px;font-size:15px}
 .sub-h{font-size:15px;font-weight:700;margin:0 0 12px;color:var(--muted)}
 @media (max-width:1000px){.hl-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
@@ -198,9 +183,10 @@ footer{padding:0 0 40px;color:var(--muted);font-size:13.5px}
 <a class="hl-item" data-game="ac" href="#tools"><span class="hl-mark"></span><h3>Unity tools</h3><p>Two editor packages with custom Inspectors and 600+ tests.</p></a>
 <a class="hl-item" data-game="wi" href="#wing-it"><span class="hl-mark"></span><h3>Game feel</h3><p>Tweened placement, timed attack warnings and damage feedback.</p></a>
 </div>
+<h3 class="sub-h">More skills</h3>
+<ul class="chips"><li>Unity 6</li><li>C#</li><li>Steamworks.NET</li><li>Input System</li><li>Gameplay systems</li><li>AI and pathfinding</li><li>Optimization</li><li>Animation</li><li>Debug and editor tools</li><li>Cinemachine</li><li>URP and HDRP</li><li>HLSL shaders</li><li>PC, Steam Deck and mobile builds</li><li>Unit testing</li><li>Git in teams</li></ul>
 <h3 class="sub-h">Awards</h3>
 <ul class="awards"><li data-game="lm"><span class="aw-mark"></span><div><b>2nd Place, Gameseed 2026</b><span>Little Mayor</span></div></li><li data-game="wi"><span class="aw-mark"></span><div><b>1st Place, GIMERSIA 2025</b><span>WING-IT</span></div></li><li data-game="wi"><span class="aw-mark"></span><div><b>Best Visual, GIMERSIA 2025</b><span>WING-IT</span></div></li><li data-game="tt"><span class="aw-mark"></span><div><b>1st Place, KMIPN VII 2025</b><span>Ice Tea Tycoon</span></div></li><li data-game="ns"><span class="aw-mark"></span><div><b>Top 6, Gameseed 2025</b><span>Logic Shield</span></div></li><li data-game="zo"><span class="aw-mark"></span><div><b>Finalist, GEMASTIK XVIII</b><span>Zero One Protocol</span></div></li></ul>
-<ul class="chips"><li>Unity 6</li><li>C#</li><li>Steamworks.NET</li><li>Input System</li><li>Gameplay systems</li><li>AI and pathfinding</li><li>Optimization</li><li>Animation</li><li>Debug and editor tools</li><li>Cinemachine</li><li>URP and HDRP</li><li>HLSL shaders</li><li>PC, Steam Deck and mobile builds</li><li>Unit testing</li><li>Git in teams</li></ul>
 </div></section>
 
 <div class="sec-title" id="work"><div class="wrap"><h2>Games</h2></div></div>
@@ -277,8 +263,8 @@ footer{padding:0 0 40px;color:var(--muted);font-size:13.5px}
 <dialog class="lb" id="lb" aria-label="Screenshot"><img alt=""><button type="button">Close</button></dialog>
 <script>
 (function(){
-  var b=document.getElementById('themeBtn'),r=document.documentElement,mq=matchMedia('(prefers-color-scheme: dark)');
-  function cur(){var t=r.getAttribute('data-theme');return t==='dark'||t==='light'?t:(mq.matches?'dark':'light');}
+  var b=document.getElementById('themeBtn'),r=document.documentElement;
+  function cur(){var t=r.getAttribute('data-theme');return t==='dark'?'dark':'light';}
   b.addEventListener('click',function(){var n=cur()==='dark'?'light':'dark';r.setAttribute('data-theme',n);try{localStorage.setItem('theme',n)}catch(e){}});
 })();
 (function(){
