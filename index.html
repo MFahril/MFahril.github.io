@@ -4,13 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>M. Fahril Ilmi, Gameplay &amp; Tools Programmer</title>
+<link rel="icon" type="image/png" href="img/Logo%20Icon.png">
+<link rel="apple-touch-icon" href="img/Logo%20Icon.png">
 <meta name="description" content="M. Fahril Ilmi, a Unity gameplay and tools programmer from Surabaya. Two games on Steam, six competition awards.">
 <script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#F4F4F1;--surface:#FFFFFF;--ink:#1B2220;--muted:#56615C;--line:#D9DDD6;--accent:#2C47D6;--accent-ink:#FFFFFF;--sans:"Schibsted Grotesk","Helvetica Neue",Arial,sans-serif;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root{--bg:#F4F4F1;--surface:#FFFFFF;--ink:#1B2220;--muted:#56615C;--line:#D9DDD6;--accent:#2C47D6;--accent-ink:#FFFFFF;--sans:"Schibsted Grotesk","Helvetica Neue",Arial,sans-serif;--ease:cubic-bezier(.22,1,.36,1);color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 :root[data-theme="dark"]{--bg:#14191B;--surface:#1B2225;--ink:#E7ECE9;--muted:#9BA7A1;--line:#2D373A;--accent:#8C9DFF;--accent-ink:#10153A;color-scheme:dark}
 [data-game="lm"]{--g-bg:#F6EBDD;--g-surface:#FFF8EF;--g-ink:#22345F;--g-muted:#6B5B4A;--g-line:#E6D3BC;--g-accent:#C8412B;--g-accent-ink:#FFFFFF;--g-alt:#3E5FA8;--g-alt-ink:#FFFFFF;}
 [data-game="wi"]{--g-bg:#D9EFF0;--g-surface:#F2FAFA;--g-ink:#1E3440;--g-muted:#486570;--g-line:#ABD5D8;--g-accent:#C8363B;--g-accent-ink:#FFFFFF;--g-alt:#4F8A43;--g-alt-ink:#FFFFFF;}
@@ -24,6 +26,7 @@
 [data-game="nu"]{--g-bg:#FCEBEC;--g-surface:#FFF8F8;--g-ink:#3A1519;--g-muted:#7E525A;--g-line:#EECFD3;--g-accent:#C93A55;--g-accent-ink:#FFFFFF;--g-alt:#C93A55;--g-alt-ink:#FFFFFF;}
 [data-game="ti"]{--g-bg:#FFE4D3;--g-surface:#FFF4EC;--g-ink:#3A1709;--g-muted:#7D4C36;--g-line:#F2C8AF;--g-accent:#C9461A;--g-accent-ink:#FFFFFF;--g-alt:#C9461A;--g-alt-ink:#FFFFFF;}
 [data-game="ns"]{--g-bg:#ECEEEA;--g-surface:#FFFFFF;--g-ink:#1B2220;--g-muted:#56615C;--g-line:#D3D9D2;--g-accent:#56615C;--g-accent-ink:#FFFFFF;--g-alt:#56615C;--g-alt-ink:#FFFFFF;}
+[data-game="ut"]{--g-bg:#2B2F31;--g-surface:#353A3C;--g-ink:#ECEFEE;--g-muted:#A9B0AD;--g-line:#464C4E;--g-accent:#DCE1DF;--g-accent-ink:#1A1E1F;--g-alt:#474D50;--g-alt-ink:#ECEFEE;}
 :root[data-theme="dark"] [data-game="lm"]{--g-bg:#1B2A47;--g-surface:#22355A;--g-ink:#F5E9D8;--g-muted:#B9C3D8;--g-line:#34507A;--g-accent:#F2A35F;--g-accent-ink:#2A1405;--g-alt:#8FB0F0;--g-alt-ink:#0F1C38;}
 :root[data-theme="dark"] [data-game="wi"]{--g-bg:#0F2A33;--g-surface:#163843;--g-ink:#E4F4F5;--g-muted:#9CC4CA;--g-line:#24505A;--g-accent:#FF6E61;--g-accent-ink:#2A0705;--g-alt:#8FD07E;--g-alt-ink:#0E2208;}
 :root[data-theme="dark"] [data-game="zo"]{--g-bg:#160D0D;--g-surface:#231616;--g-ink:#F2ECE8;--g-muted:#BFA9A4;--g-line:#3A2424;--g-accent:#8BE04E;--g-accent-ink:#0E1A05;--g-alt:#D9473F;--g-alt-ink:#FFFFFF;}
@@ -36,6 +39,7 @@
 :root[data-theme="dark"] [data-game="nu"]{--g-bg:#251316;--g-surface:#2F1A1E;--g-ink:#FBE6E8;--g-muted:#C9A0A7;--g-line:#47282D;--g-accent:#FF7D93;--g-accent-ink:#33070F;--g-alt:#FF7D93;--g-alt-ink:#33070F;}
 :root[data-theme="dark"] [data-game="ti"]{--g-bg:#1F130D;--g-surface:#2A1A12;--g-ink:#FFE8DA;--g-muted:#CC9E86;--g-line:#46291C;--g-accent:#FF7D45;--g-accent-ink:#2E0E00;--g-alt:#FF7D45;--g-alt-ink:#2E0E00;}
 :root[data-theme="dark"] [data-game="ns"]{--g-bg:#1B2225;--g-surface:#232B2F;--g-ink:#E7ECE9;--g-muted:#9BA7A1;--g-line:#2D373A;--g-accent:#9BA7A1;--g-accent-ink:#14191B;--g-alt:#9BA7A1;--g-alt-ink:#14191B;}
+:root[data-theme="dark"] [data-game="ut"]{--g-bg:#202325;--g-surface:#2A2E30;--g-ink:#E7ECE9;--g-muted:#9BA4A0;--g-line:#383E40;--g-accent:#DCE1DF;--g-accent-ink:#1A1E1F;--g-alt:#3A4043;--g-alt-ink:#E7ECE9;}
 *,*::before,*::after{box-sizing:inherit}
 html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 60px);scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
@@ -48,54 +52,59 @@ a{color:var(--accent);text-underline-offset:3px}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
 .top .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;height:60px}
-.brand{font-weight:700;text-decoration:none;color:var(--ink)}
-.top nav{display:flex;gap:22px}
+.brand{font-weight:600;text-decoration:none;color:var(--ink)}
+.top nav{display:flex;gap:24px}
 .top nav a{color:var(--muted);text-decoration:none;font-size:15px;white-space:nowrap}
 .top nav a:hover{color:var(--ink)}
-.right{display:flex;align-items:center;gap:18px}
-.theme{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;padding:0}
+.right{display:flex;align-items:center;gap:16px}
+.theme{display:inline-grid;place-items:center;width:40px;height:40px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;padding:0;transition:border-color 160ms var(--ease),transform 160ms var(--ease)}
+.theme:active,.btn:active{transform:scale(.98)}
 .theme:hover{border-color:var(--ink)}
 .theme .sun{display:none}
 :root[data-theme="dark"] .theme .sun{display:block}:root[data-theme="dark"] .theme .moon{display:none}
 @media (max-width:560px){.top nav .opt{display:none}.top nav{gap:16px}}
-.btn{display:inline-flex;align-items:center;padding:11px 18px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;border:1.5px solid var(--line);color:var(--ink);background:var(--surface)}
+.btn{display:inline-flex;align-items:center;padding:12px 20px;border-radius:10px;font-weight:600;font-size:15px;text-decoration:none;border:1.5px solid var(--line);color:var(--ink);background:var(--surface);transition:border-color 160ms var(--ease),transform 160ms var(--ease)}
 .btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
 .btn:hover{border-color:var(--ink)}
 .hero{padding:72px 0 48px}
 .hero .wrap{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:48px;align-items:center}
-.hero h1{font-size:clamp(44px,6.4vw,82px);line-height:.95;letter-spacing:-.035em;font-weight:800;margin:0 0 20px}
+.hero h1{font-size:clamp(40px,6vw,72px);line-height:1;letter-spacing:-.03em;font-weight:600;margin:0 0 20px}
 .hero .role{font-size:clamp(20px,2.1vw,25px);line-height:1.3;font-weight:500;margin:0 0 16px}
-.hero .intro{color:var(--muted);max-width:56ch;margin:0 0 26px}
+.hero .intro{color:var(--muted);max-width:56ch;margin:0 0 24px}
 .hero .photo{width:260px;height:260px;border-radius:28px;object-fit:cover;object-position:center top;display:block;background:linear-gradient(160deg,#E6E9EC,#C5CBD1)}
 .actions{display:flex;flex-wrap:wrap;gap:10px}
 @media (max-width:820px){.hero .wrap{grid-template-columns:1fr;gap:28px}.hero .photo{width:150px;height:150px;border-radius:20px;order:-1}.hero{padding-top:40px}}
 .hl{padding:0 0 64px}
-.hl-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-bottom:22px}
-.hl-item{display:block;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 18px;text-decoration:none;color:var(--ink)}
-.hl-item:hover{border-color:var(--g-accent)}
-.hl-mark{display:block;width:24px;height:5px;border-radius:3px;background:var(--g-accent);margin-bottom:10px}
-.hl-item h3{font-size:18px;letter-spacing:-.015em;line-height:1.15;margin:0 0 4px;font-weight:800}
-.hl-item p{margin:0;color:var(--muted);font-size:14.5px;line-height:1.45}
-.awards{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
-.awards li{display:flex;gap:8px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 14px 6px 10px;font-size:14.5px}
-.aw-mark{flex:none;width:10px;height:10px;border-radius:50%;background:var(--g-accent)}
-.awards b{font-weight:700}
-.awards div span{color:var(--muted);margin-left:6px}
-.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0 0 26px;padding:0}
-.chips li{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:6px 14px;font-size:15px}
-.sub-h{font-size:15px;font-weight:700;margin:0 0 12px;color:var(--muted)}
+.hl-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:32px;margin-bottom:64px}
+.hl-item{padding-top:16px;border-top:1px solid var(--ink)}
+.hl-item h3{font-size:18px;line-height:1.2;margin:0 0 8px;font-weight:600}
+.hl-item p{margin:0;color:var(--muted);font-size:14px;line-height:1.45}
+.hl-cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:64px}
+.sub-h{font-size:15px;font-weight:600;margin:0 0 12px}
+.rows,.skills{list-style:none;margin:0;padding:0;border-bottom:1px solid var(--line)}
+.rows li,.skills div{padding:12px 0;border-top:1px solid var(--line);font-size:15px}
+.rows li{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px}
+.rows b{font-weight:600}
+.rows a,.rows span{color:var(--muted);text-decoration:none}
+.rows a:hover{color:var(--ink);text-decoration:underline;text-underline-offset:3px}
+.rows b a{color:inherit;text-decoration:underline;text-decoration-color:var(--muted);text-decoration-thickness:1px;text-underline-offset:3px;transition:text-decoration-color 160ms var(--ease)}
+.rows b a:hover{text-decoration-color:currentColor}
+.skills div{display:grid;grid-template-columns:160px minmax(0,1fr);gap:16px}
+.skills dt{color:var(--muted)}
+.skills dd{margin:0}
 @media (max-width:1000px){.hl-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:560px){.hl-grid{grid-template-columns:1fr}}
+@media (max-width:900px){.hl-cols{grid-template-columns:1fr;gap:40px}}
+@media (max-width:560px){.hl-grid{grid-template-columns:1fr;gap:24px;margin-bottom:48px}.skills div{grid-template-columns:1fr;gap:4px}}
 .sec-title{padding:64px 0 28px;border-top:1px solid var(--line)}
-.sec-title h2{font-size:clamp(28px,3.2vw,38px);letter-spacing:-.025em;margin:0;font-weight:800}
+.sec-title h2{font-size:clamp(28px,3.2vw,36px);letter-spacing:-.01em;margin:0;font-weight:600}
 /* game bands */
 .game{position:relative;overflow:hidden;background:var(--g-bg);color:var(--g-ink);padding:84px 0 64px}
 .g-top{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:56px;align-items:center}
-.game h3{font-size:clamp(42px,5.6vw,72px);line-height:.95;letter-spacing:-.04em;margin:0 0 14px;font-weight:800}
-.g-info{margin:0 0 10px;font-size:15px;color:var(--g-muted)}
-.g-pitch{margin:0 0 18px;font-size:20px;max-width:30ch}
-.badges{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px}
-.badge{background:var(--g-alt);color:var(--g-alt-ink);border-radius:999px;padding:5px 12px;font-size:14px;font-weight:700}
+.game h3{font-size:clamp(42px,5.6vw,72px);line-height:1;letter-spacing:-.03em;margin:0 0 16px;font-weight:800}
+.g-info{margin:0 0 8px;font-size:15px;color:var(--g-muted)}
+.g-pitch{margin:0 0 16px;font-size:20px;max-width:30ch}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 24px}
+.badge{background:var(--g-alt);color:var(--g-alt-ink);border-radius:6px;padding:4px 12px;font-size:14px;font-weight:600}
 .g-role{margin:0 0 24px;font-weight:600}
 .g-role span{display:block;font-weight:400;font-size:14px;color:var(--g-muted)}
 .g-links{display:flex;flex-wrap:wrap;gap:10px}
@@ -104,53 +113,80 @@ a{color:var(--accent);text-underline-offset:3px}
 .game .btn:hover,.card .btn:hover{filter:brightness(1.08)}
 .art{position:relative}
 .art .key{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:20px;background:var(--g-surface);box-shadow:0 24px 48px -24px rgba(0,0,0,.45)}
+.play{position:absolute;inset:0;z-index:1;display:grid;place-items:center;padding:0;border:0;border-radius:20px;background:rgba(0,0,0,0);cursor:pointer;transition:background-color 160ms var(--ease)}
+.play span{display:grid;place-items:center;width:76px;height:76px;border-radius:50%;background:var(--g-accent);color:var(--g-accent-ink);box-shadow:0 10px 28px rgba(0,0,0,.35);opacity:0;transform:scale(.85);transition:opacity 160ms var(--ease),transform 160ms var(--ease)}
+.play svg{transform:translateX(-1px)}
+.play[hidden]{display:none}
+.play:hover,.play:focus-visible{background:rgba(0,0,0,.3)}
+.play:hover span,.play:focus-visible span{opacity:1;transform:none}
+@media (hover:none){.play span{opacity:1;transform:none;width:60px;height:60px}}
+@media (prefers-reduced-motion:reduce){.play,.play span,.btn,.theme,.hl-item,.shot img,.st{transition:none}}
+.art video.trailer{position:absolute;inset:0;z-index:1;width:100%;height:100%;border-radius:20px;background:#000;object-fit:cover}
+.tool .art .key{aspect-ratio:auto;height:auto;object-fit:fill}
+.rv{opacity:0;transform:translateY(14px);transition:opacity 480ms var(--ease),transform 480ms var(--ease);transition-delay:calc(var(--i,0)*60ms)}
+.rv.in{opacity:1;transform:none}
+.st{transition:transform 240ms var(--ease)}
+.st.js{opacity:0}
+.st.js.in{opacity:1;animation:stpop 560ms cubic-bezier(.3,1.3,.5,1) calc(var(--i,0)*90ms) backwards}
+@keyframes stpop{from{opacity:0;transform:rotate(var(--r,0deg)) scale(.55) translateY(12px)}to{opacity:1;transform:rotate(var(--r,0deg))}}
+.art:hover .st,.g-mid:hover .st.corner{transform:rotate(calc(var(--r,0deg) + 5deg)) translateY(-5px)}
+.art-shot::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.3),transparent) no-repeat 0 0/22% 100%}
+.art-shot.scan::after{animation:scan 1500ms cubic-bezier(.45,.05,.3,1) both}
+#litmotion .art-shot::after{inset:20% auto 26% 12%;width:55.5%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.95) 45%,rgba(255,255,255,.95) 55%,transparent) no-repeat 0 0/14px 100%}
+@keyframes scan{0%{opacity:0;background-position:0 0}12%{opacity:1}88%{opacity:1}100%{opacity:0;background-position:100% 0}}
+.game.tool h3{font-size:clamp(36px,4.6vw,56px)}
+.game.tool + .game.tool{border-top:1px solid var(--g-line)}
+.shot.art-shot{width:100%;border-radius:20px;box-shadow:0 24px 48px -24px rgba(0,0,0,.45)}
+.art-shot .key{box-shadow:none}
 .st{position:absolute;width:var(--w,100px);height:auto;transform:rotate(var(--r,0deg));pointer-events:none;filter:drop-shadow(0 8px 12px rgba(0,0,0,.22));z-index:2}
 .g-mid{position:relative}
-.st.corner{right:2%;bottom:-6px}
+.st.corner{left:4%;bottom:0}
+@media (max-width:1199px){.st.corner{display:none}}
 .g-mid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:56px;margin-top:56px;align-items:start}
 .pts{list-style:none;margin:0;padding:0}
-.pts li{padding:12px 0 12px 26px;border-top:1px solid var(--g-line);position:relative}
+.pts li{padding:12px 0 12px 28px;border-top:1px solid var(--g-line);position:relative}
 .pts li:last-child{border-bottom:1px solid var(--g-line)}
 .pts li::before{content:"";position:absolute;left:2px;top:1.15em;width:10px;height:10px;border-radius:3px;background:var(--g-accent)}
 .g-foot{margin:16px 0 0;font-size:14px;color:var(--g-muted)}
-.shots{display:grid;grid-template-columns:repeat(var(--n),minmax(0,1fr));gap:12px}
+.shots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.clip{border-radius:12px;overflow:hidden;background:var(--g-surface)}
+.clip video{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}
 .shot{display:block;padding:0;border:0;background:var(--g-surface);border-radius:12px;overflow:hidden;cursor:zoom-in}
-.shot img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;transition:transform .25s}
-.shot:hover img{transform:scale(1.04)}
+.shot img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;transition:opacity 160ms var(--ease)}
+.shot:hover img{opacity:.88}
 details.more{margin-top:40px;border-top:1px solid var(--g-line);border-bottom:1px solid var(--g-line)}
-details.more summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:18px 0;font-weight:700}
+details.more summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 0;font-weight:600}
 details.more summary::-webkit-details-marker{display:none}
 details.more summary::after{content:"+";font-size:24px;line-height:1;font-weight:400;color:var(--g-accent)}
 details.more[open] summary::after{content:"−"}
-.more-in{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 48px;padding:4px 0 26px}
-.more-in h4{margin:0 0 6px;font-size:16px}
+.more-in{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 48px;padding:4px 0 24px}
+.more-in h4{margin:0 0 8px;font-size:16px;font-weight:600}
 .more-in p{margin:0;color:var(--g-ink);opacity:.88;font-size:16px;max-width:60ch}
-@media (max-width:900px){.g-top,.g-mid{grid-template-columns:1fr;gap:32px}.g-mid{margin-top:44px}.game{padding:60px 0 48px}.more-in{grid-template-columns:1fr}.art{margin:24px 12px 12px}.st{width:calc(var(--w,100px)*.62)}.st.corner{display:none}.st-wi-plane{top:-46px!important;right:-10px!important}}
-@media (max-width:520px){.shots{grid-template-columns:1fr 1fr}.shots .shot:nth-child(3){grid-column:1 / -1}}
+@media (max-width:900px){.g-top,.g-mid{grid-template-columns:1fr;gap:32px}.g-mid{margin-top:44px}.game{padding:60px 0 48px}.more-in{grid-template-columns:1fr}.art{margin:32px 28px 24px}.st{width:calc(var(--w,100px)*.62)}.st.corner{display:none}.st-wi-plane{top:-46px!important;right:-10px!important}.st-lm-logo{left:-24px!important}}
 dialog.lb{border:0;padding:0;background:transparent;max-width:min(1200px,94vw);max-height:90vh}
 dialog.lb::backdrop{background:rgba(10,12,14,.82)}
 dialog.lb img{display:block;max-width:100%;max-height:84vh;border-radius:12px}
 dialog.lb button{margin:12px auto 0;display:block;font:inherit;font-weight:600;color:#fff;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:8px 18px;cursor:pointer}
 .cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;padding-bottom:64px}
 .cards.three{grid-template-columns:repeat(3,minmax(0,1fr))}
-.card{background:var(--g-bg);color:var(--g-ink);border-radius:18px;padding:28px;display:flex;flex-direction:column}
-.card h3{font-size:30px;letter-spacing:-.025em;line-height:1.05;margin:0 0 8px;font-weight:800}
-.card.small h3{font-size:26px}
-.c-pitch{margin:0 0 18px;max-width:40ch}
+.card{background:var(--g-bg);color:var(--g-ink);border-radius:16px;padding:28px;display:flex;flex-direction:column}
+.card h3{font-size:28px;letter-spacing:-.01em;line-height:1.1;margin:0 0 8px;font-weight:600}
+.card.small h3{font-size:24px}
+.c-pitch{margin:0 0 16px;max-width:40ch}
 .card.small .c-pitch{margin-bottom:0}
-.card .pts li{font-size:15.5px}
-.c-foot{margin-top:auto;padding-top:22px}
-.card .g-info{margin-bottom:6px;font-size:14px}
+.card .pts li{font-size:15px}
+.c-foot{margin-top:auto;padding-top:24px}
+.card .g-info{margin-bottom:8px;font-size:14px}
 @media (max-width:900px){.cards,.cards.three{grid-template-columns:1fr}}
 @media (min-width:901px) and (max-width:1100px){.cards.three{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .contact{padding:72px 0 88px;border-top:1px solid var(--line)}
-.contact h2{font-size:clamp(34px,5vw,58px);line-height:1;letter-spacing:-.035em;margin:0 0 16px;font-weight:800}
-.contact p{color:var(--muted);margin:0 0 26px}
+.contact h2{font-size:clamp(36px,5vw,56px);line-height:1;letter-spacing:-.03em;margin:0 0 16px;font-weight:600}
+.contact p{color:var(--muted);margin:0 0 24px}
 .links{list-style:none;margin:0;padding:0;max-width:620px}
-.links li{display:grid;grid-template-columns:110px 1fr;gap:16px;padding:13px 0;border-top:1px solid var(--line)}
+.links li{display:grid;grid-template-columns:110px 1fr;gap:16px;padding:12px 0;border-top:1px solid var(--line)}
 .links li:last-child{border-bottom:1px solid var(--line)}
 .links span{color:var(--muted)}
-footer{padding:0 0 40px;color:var(--muted);font-size:13.5px}
+footer{padding:0 0 40px;color:var(--muted);font-size:14px}
 @media (max-width:560px){.wrap{padding:0 20px}body{font-size:16px}.links li{grid-template-columns:84px 1fr}.card{padding:24px}}
 </style>
 </head>
@@ -163,8 +199,8 @@ footer{padding:0 0 40px;color:var(--muted);font-size:13.5px}
 <section class="hero"><div class="wrap">
 <div>
 <h1>M. Fahril Ilmi</h1>
-<p class="role">Gameplay &amp; tools programmer (Unity), looking for an internship.</p>
-<p class="intro">Game Technology student at Politeknik Elektronika Negeri Surabaya (PENS) and co-founder of <a href="https://www.a-fair.com/" target="_blank" rel="noopener">A FAIR Studio</a>. I’ve shipped 2 games on Steam, and our games have won 6 competition awards.</p>
+<p class="role">Gameplay &amp; tools programmer (Unity), looking for an internship</p>
+<p class="intro">Game Technology student at <a href="https://www.pens.ac.id/" target="_blank" rel="noopener">Politeknik Elektronika Negeri Surabaya (PENS)</a> and co-founder of <a href="https://www.a-fair.com/" target="_blank" rel="noopener">A FAIR Studio</a>. I’ve shipped 2 games on Steam, and our games have won 6 competition awards.</p>
 <div class="actions">
 <a class="btn primary" href="#work">See my work</a>
 <a class="btn" href="Fahril_CV.pdf" download="Fahril_CV.pdf">Download CV</a>
@@ -178,76 +214,102 @@ footer{padding:0 0 40px;color:var(--muted);font-size:13.5px}
 <section class="hl" id="skills"><div class="wrap">
 <h2 class="sr">Highlights</h2>
 <div class="hl-grid">
-<a class="hl-item" data-game="zo" href="#zero-one"><span class="hl-mark"></span><h3>2 games on Steam</h3><p>WING-IT and Zero One Protocol, with Steam leaderboards.</p></a>
-<a class="hl-item" data-game="lm" href="#little-mayor"><span class="hl-mark"></span><h3>Gameplay systems</h3><p>AI, pathfinding, bosses, puzzles and economies across 9 games.</p></a>
-<a class="hl-item" data-game="ac" href="#tools"><span class="hl-mark"></span><h3>Unity tools</h3><p>Two editor packages with custom Inspectors and 600+ tests.</p></a>
-<a class="hl-item" data-game="wi" href="#wing-it"><span class="hl-mark"></span><h3>Game feel</h3><p>Tweened placement, timed attack warnings and damage feedback.</p></a>
+<div class="hl-item"><h3>Gameplay systems</h3><p>I like the logic players never see, like how a resident decides what to do next, how a boss changes phase and how cargo never gets lost. I’ve built it across 9 games.</p></div>
+<div class="hl-item"><h3>Game feel</h3><p>A system isn’t done until it feels right, so I add the small things that sell it, like a building that settles into place, a warning that lands just before the hit and a flash when you take damage.</p></div>
+<div class="hl-item"><h3>Unity tools</h3><p>When a job keeps repeating, I build a tool for it. Auto Collider and LitMotion Tween Editor, my two editor packages, bring that work into Unity and are backed by 600+ tests.</p></div>
+<div class="hl-item"><h3>Shipping and platforms</h3><p>I take a game past “it runs on my machine”. That means Steam leaderboards and achievements, and builds for Windows, Steam Deck, macOS, Android and iOS.</p></div>
 </div>
-<ul class="chips"><li>Unity 6</li><li>C#</li><li>Steamworks.NET</li><li>Input System</li><li>Gameplay systems</li><li>AI and pathfinding</li><li>Optimization</li><li>Animation</li><li>Debug and editor tools</li><li>Cinemachine</li><li>URP and HDRP</li><li>HLSL shaders</li><li>PC, Steam Deck and mobile builds</li><li>Unit testing</li><li>Git in teams</li></ul>
-<h3 class="sub-h">Awards</h3>
-<ul class="awards"><li data-game="lm"><span class="aw-mark"></span><div><b>2nd Place, Gameseed 2026</b><span>Little Mayor</span></div></li><li data-game="wi"><span class="aw-mark"></span><div><b>1st Place, GIMERSIA 2025</b><span>WING-IT</span></div></li><li data-game="wi"><span class="aw-mark"></span><div><b>Best Visual, GIMERSIA 2025</b><span>WING-IT</span></div></li><li data-game="tt"><span class="aw-mark"></span><div><b>1st Place, KMIPN VII 2025</b><span>Ice Tea Tycoon</span></div></li><li data-game="ns"><span class="aw-mark"></span><div><b>Top 6, Gameseed 2025</b><span>Logic Shield</span></div></li><li data-game="zo"><span class="aw-mark"></span><div><b>Finalist, GEMASTIK XVIII</b><span>Zero One Protocol</span></div></li></ul>
+<div class="hl-cols">
+<div><h3 class="sub-h">Awards</h3>
+<ul class="rows"><li><b>2nd Place, <a href="https://www.instagram.com/gameseed.id/" target="_blank" rel="noopener">Gameseed</a> 2026</b><a href="#little-mayor">Little Mayor</a></li><li><b>1st Place, <a href="https://www.instagram.com/gimersia/" target="_blank" rel="noopener">GIMERSIA</a> 2025</b><a href="#wing-it">WING-IT</a></li><li><b>Best Visual, <a href="https://www.instagram.com/gimersia/" target="_blank" rel="noopener">GIMERSIA</a> 2025</b><a href="#wing-it">WING-IT</a></li><li><b>1st Place, KMIPN VII 2025</b><a href="#ice-tea">Ice Tea Tycoon</a></li><li><b>Top 6, <a href="https://www.instagram.com/gameseed.id/" target="_blank" rel="noopener">Gameseed</a> 2025</b><a href="#zero-one">Logic Shield</a></li><li><b>Finalist, <a href="https://www.instagram.com/gemastik.official/" target="_blank" rel="noopener">GEMASTIK</a> XVIII</b><a href="#zero-one">Zero One Protocol</a></li></ul></div>
+<div><h3 class="sub-h">Skills</h3>
+<dl class="skills"><div><dt>Engine</dt><dd>Unity 6, C#, URP and HDRP, HLSL shaders, Cinemachine, Input System</dd></div><div><dt>Systems</dt><dd>Gameplay systems, AI and pathfinding, Optimization, Animation</dd></div><div><dt>Tools and workflow</dt><dd>Debug and editor tools, Unit testing, Git in teams</dd></div><div><dt>Platforms</dt><dd>Steamworks.NET, PC, Steam Deck and mobile builds</dd></div></dl></div>
+</div>
 </div></section>
 
 <div class="sec-title" id="work"><div class="wrap"><h2>Games</h2></div></div>
 
 <section class="game" data-game="lm" id="little-mayor"><div class="wrap">
 <div class="g-top">
-<div class="g-main"><p class="g-info">Team of 5, 2026</p><h3>Little Mayor</h3><p class="g-pitch">A cozy city builder on a child’s bedroom floor.</p><div class="badges"><span class="badge">2nd Place, Gameseed 2026</span></div>
-<p class="g-role"><span>My role</span>Lead gameplay systems programmer</p><div class="g-links"><a class="btn" href="https://a-fair-studio.itch.io/little-mayor" target="_blank" rel="noopener">Play in browser</a></div></div>
-<div class="art"><img class="key" src="img/lm-key.webp" alt="Little Mayor key art" loading="lazy"><img class="st st-lm-logo" src="img/lm-logo.webp" alt="" aria-hidden="true" style="top:-34px;left:-30px;--w:170px;--r:-7deg" loading="lazy"><img class="st st-lm-house" src="img/lm-house.webp" alt="" aria-hidden="true" style="top:-26px;right:-18px;--w:96px;--r:9deg" loading="lazy"><img class="st st-lm-roo" src="img/lm-roo.webp" alt="" aria-hidden="true" style="bottom:-30px;right:6%;--w:78px;--r:6deg" loading="lazy"><img class="st st-lm-villager" src="img/lm-villager.webp" alt="" aria-hidden="true" style="bottom:-24px;left:-14px;--w:70px;--r:-8deg" loading="lazy"></div>
+<div class="g-main"><p class="g-info">Team of 5, 2026</p><h3>Little Mayor</h3><p class="g-pitch">A cozy city builder on a child’s bedroom floor</p><div class="badges"><span class="badge">2nd Place, Gameseed 2026</span></div>
+<p class="g-role"><span>My role</span>Lead gameplay systems programmer</p><div class="g-links"><a class="btn" href="https://a-fair-studio.itch.io/little-mayor" target="_blank" rel="noopener">Play on itch.io</a></div></div>
+<div class="art"><img class="key" src="img/lm-key.webp" alt="Little Mayor key art" loading="lazy"><button type="button" class="play" data-src="trailers/little-mayor.mp4" data-name="Little Mayor" aria-label="Play Little Mayor trailer"><span><svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M8 5.5v13a1 1 0 0 0 1.5.86l11-6.5a1 1 0 0 0 0-1.72l-11-6.5A1 1 0 0 0 8 5.5Z"/></svg></span></button><img class="st st-lm-logo" src="img/lm-logo.webp" alt="" aria-hidden="true" style="top:-48px;left:-44px;--w:170px;--r:-7deg" loading="lazy"><img class="st st-lm-house" src="img/lm-house.webp" alt="" aria-hidden="true" style="top:-42px;right:-32px;--w:96px;--r:9deg" loading="lazy"><img class="st st-lm-roo" src="img/lm-roo.webp" alt="" aria-hidden="true" style="bottom:-46px;right:4%;--w:78px;--r:6deg" loading="lazy"><img class="st st-lm-villager" src="img/lm-villager.webp" alt="" aria-hidden="true" style="bottom:-40px;left:-28px;--w:70px;--r:-8deg" loading="lazy"></div>
 </div>
 <div class="g-mid">
 <div><ul class="pts"><li>A* pathfinding that prefers roads and never strands a resident</li><li>Resident AI driven by one priority-based decision ladder</li><li>Goods economy where cargo is never lost or sold twice</li><li>Custom URP outline renderer, cheap enough for WebGL</li></ul><p class="g-foot">Unity 6, C#, URP, HLSL, Cinemachine 3</p></div>
-<div class="shots" style="--n:3"><button type="button" class="shot" data-full="img/lm-1.webp" aria-label="Little Mayor screenshot 1, open larger"><img src="img/lm-1.webp" alt="Little Mayor gameplay screenshot 1" loading="lazy"></button><button type="button" class="shot" data-full="img/lm-2.webp" aria-label="Little Mayor screenshot 2, open larger"><img src="img/lm-2.webp" alt="Little Mayor gameplay screenshot 2" loading="lazy"></button><button type="button" class="shot" data-full="img/lm-3.webp" aria-label="Little Mayor screenshot 3, open larger"><img src="img/lm-3.webp" alt="Little Mayor gameplay screenshot 3" loading="lazy"></button></div>
-<img class="st corner" src="img/lm-wiggles.webp" alt="" aria-hidden="true" style="--w:120px;--r:8deg" loading="lazy"></div>
+<div class="shots"><div class="clip"><video src="clips/lm-1.mp4" muted loop playsinline preload="metadata" aria-label="Little Mayor gameplay clip 1"></video></div><div class="clip"><video src="clips/lm-2.mp4" muted loop playsinline preload="metadata" aria-label="Little Mayor gameplay clip 2"></video></div><button type="button" class="shot" data-full="img/lm-1.webp" aria-label="Little Mayor screenshot 1, open larger"><img src="img/lm-1.webp" alt="Little Mayor gameplay screenshot 1" loading="lazy"></button><button type="button" class="shot" data-full="img/lm-2.webp" aria-label="Little Mayor screenshot 2, open larger"><img src="img/lm-2.webp" alt="Little Mayor gameplay screenshot 2" loading="lazy"></button><button type="button" class="shot" data-full="img/lm-3.webp" aria-label="Little Mayor screenshot 3, open larger"><img src="img/lm-3.webp" alt="Little Mayor gameplay screenshot 3" loading="lazy"></button><button type="button" class="shot" data-full="img/lm-4.webp" aria-label="Little Mayor screenshot 4, open larger"><img src="img/lm-4.webp" alt="Little Mayor gameplay screenshot 4" loading="lazy"></button></div>
+<img class="st corner" src="img/lm-wiggles.webp" alt="" aria-hidden="true" style="--w:96px;--r:8deg" loading="lazy"></div>
 <details class="more"><summary>Read what I built in Little Mayor</summary><div class="more-in"><div><h4>Grid, placement and pathfinding</h4><p>I built the grid and map expansion, building placement with ghost previews and drag-painted roads, and a multi-pass A* that tries roads first, then grass, then the closest reachable tile. Search buffers are allocated once, so a path request creates no garbage.</p></div><div><h4>Resident AI</h4><p>Residents used to have eight decision paths that disagreed with each other. I replaced them with one state table and a priority-band ladder (roam, routine, errand, work, fun, rest, player command), so a lower-priority request can never interrupt a higher one.</p></div><div><h4>Goods economy</h4><p>Carriers haul goods to the nearest storage. Sell orders reserve stock nearest-first, and cargo is refunded or rerouted if a building is demolished mid-trip, so nothing is lost or sold twice.</p></div><div><h4>Rendering, feel and tools</h4><p>A URP RenderGraph outline using a separable distance transform (50 texture reads per pixel instead of 625), the orbit camera, the hand that places buildings, tween presets, an obstacle baker, custom Inspectors and an in-game debug console.</p></div></div></details>
 </div></section>
 <section class="game" data-game="wi" id="wing-it"><div class="wrap">
 <div class="g-top">
-<div class="g-main"><p class="g-info">Team of 5, 2025–2026</p><h3>WING-IT</h3><p class="g-pitch">A paper-craft toy-plane shoot-’em-up with local co-op and multi-phase bosses.</p><div class="badges"><span class="badge">1st Place, GIMERSIA 2025</span><span class="badge">Best Visual, GIMERSIA 2025</span><span class="badge">On Steam</span></div>
-<p class="g-role"><span>My role</span>Combat and gameplay programmer</p><div class="g-links"><a class="btn" href="https://store.steampowered.com/app/4201740/WINGIT/" target="_blank" rel="noopener">View on Steam</a><a class="btn ghost" href="https://a-fair-studio.itch.io/wing-it" target="_blank" rel="noopener">itch.io</a></div></div>
-<div class="art"><img class="key" src="img/wi-key.webp" alt="WING-IT key art" loading="lazy"><img class="st st-wi-plane" src="img/wi-plane.webp" alt="" aria-hidden="true" style="top:-78px;right:-70px;--w:160px;--r:-8deg" loading="lazy"><img class="st st-wi-crayon" src="img/wi-crayon.webp" alt="" aria-hidden="true" style="top:-22px;left:-26px;--w:92px;--r:-24deg" loading="lazy"><img class="st st-wi-soldier" src="img/wi-soldier.webp" alt="" aria-hidden="true" style="bottom:-30px;left:-18px;--w:96px;--r:-4deg" loading="lazy"><img class="st st-wi-cannon" src="img/wi-cannon.webp" alt="" aria-hidden="true" style="bottom:-26px;right:8%;--w:72px;--r:10deg" loading="lazy"></div>
+<div class="g-main"><p class="g-info">Team of 5, 2025–2026</p><h3>WING-IT</h3><p class="g-pitch">A paper-craft toy-plane shoot-’em-up with local co-op and multi-phase bosses</p><div class="badges"><span class="badge">1st Place, GIMERSIA 2025</span><span class="badge">Best Visual, GIMERSIA 2025</span><span class="badge">On Steam</span></div>
+<p class="g-role"><span>My role</span>Combat and gameplay programmer</p><div class="g-links"><a class="btn" href="https://store.steampowered.com/app/4201740/WINGIT/" target="_blank" rel="noopener">Play on Steam</a><a class="btn ghost" href="https://a-fair-studio.itch.io/wing-it" target="_blank" rel="noopener">Play on itch.io</a></div></div>
+<div class="art"><img class="key" src="img/wi-key.webp" alt="WING-IT key art" loading="lazy"><button type="button" class="play" data-src="trailers/wing-it.mp4" data-name="WING-IT" aria-label="Play WING-IT trailer"><span><svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M8 5.5v13a1 1 0 0 0 1.5.86l11-6.5a1 1 0 0 0 0-1.72l-11-6.5A1 1 0 0 0 8 5.5Z"/></svg></span></button><img class="st st-wi-plane" src="img/wi-plane.webp" alt="" aria-hidden="true" style="top:-78px;right:-70px;--w:160px;--r:-8deg" loading="lazy"><img class="st st-wi-crayon" src="img/wi-crayon.webp" alt="" aria-hidden="true" style="top:-22px;left:-26px;--w:92px;--r:-24deg" loading="lazy"><img class="st st-wi-soldier" src="img/wi-soldier.webp" alt="" aria-hidden="true" style="bottom:-30px;left:-18px;--w:96px;--r:-4deg" loading="lazy"><img class="st st-wi-cannon" src="img/wi-cannon.webp" alt="" aria-hidden="true" style="bottom:-26px;right:8%;--w:72px;--r:10deg" loading="lazy"></div>
 </div>
 <div class="g-mid">
 <div><ul class="pts"><li>Multi-phase boss framework used by both bosses</li><li>Attack sequencer designers edit in the Inspector</li><li>Pooled bullets and waves, co-op boss targeting</li><li>Six weapons and gamepad-friendly menus</li></ul><p class="g-foot">Unity 6, C#, URP, Input System, Cinemachine 3</p></div>
-<div class="shots" style="--n:2"><button type="button" class="shot" data-full="img/wi-1.webp" aria-label="WING-IT screenshot 1, open larger"><img src="img/wi-1.webp" alt="WING-IT gameplay screenshot 1" loading="lazy"></button><button type="button" class="shot" data-full="img/wi-2.webp" aria-label="WING-IT screenshot 2, open larger"><img src="img/wi-2.webp" alt="WING-IT gameplay screenshot 2" loading="lazy"></button></div>
+<div class="shots"><div class="clip"><video src="clips/wi-1.mp4" muted loop playsinline preload="metadata" aria-label="WING-IT gameplay clip 1"></video></div><div class="clip"><video src="clips/wi-2.mp4" muted loop playsinline preload="metadata" aria-label="WING-IT gameplay clip 2"></video></div><button type="button" class="shot" data-full="img/wi-1.webp" aria-label="WING-IT screenshot 1, open larger"><img src="img/wi-1.webp" alt="WING-IT gameplay screenshot 1" loading="lazy"></button><button type="button" class="shot" data-full="img/wi-2.webp" aria-label="WING-IT screenshot 2, open larger"><img src="img/wi-2.webp" alt="WING-IT gameplay screenshot 2" loading="lazy"></button><button type="button" class="shot" data-full="img/wi-3.webp" aria-label="WING-IT screenshot 3, open larger"><img src="img/wi-3.webp" alt="WING-IT gameplay screenshot 3" loading="lazy"></button><button type="button" class="shot" data-full="img/wi-4.webp" aria-label="WING-IT screenshot 4, open larger"><img src="img/wi-4.webp" alt="WING-IT gameplay screenshot 4" loading="lazy"></button></div>
 <img class="st corner" src="img/wi-mortar.webp" alt="" aria-hidden="true" style="--w:96px;--r:-10deg" loading="lazy"></div>
 <details class="more"><summary>Read what I built in WING-IT</summary><div class="more-in"><div><h4>Boss framework</h4><p>A six-state boss controller (intro, phase 1, transition, phase 2, defeat) with separate health pools, an invulnerable transition, weak spots and materials that wear down with damage. Attack phases plug in through an interface, which I added when the second boss arrived.</p></div><div><h4>Attack sequencer</h4><p>Designers chain seven attack types in the Inspector: gatling patterns, punches, an aimed laser and minion summons. Attacks in one step run together, and warnings are timed so damage lands with the animation.</p></div><div><h4>Enemies and performance</h4><p>Minibosses share one base class with overridable attack hooks, minion waves are scripted, and bullets and waves come from object pools. Bosses target the closest or a random living player, so both co-op players get attention.</p></div><div><h4>Weapons, menus and animation</h4><p>Six weapons including homing rockets and an arcing mortar, gamepad navigation for five menu screens, and 48 boss and enemy animation clips and controllers set up in Unity.</p></div></div></details>
 </div></section>
 <section class="game" data-game="zo" id="zero-one"><div class="wrap">
 <div class="g-top">
-<div class="g-main"><p class="g-info">Team of 5, 2025–2026</p><h3>Zero One Protocol</h3><p class="g-pitch">A co-op logic-gate puzzle platformer.</p><div class="badges"><span class="badge">Finalist, GEMASTIK XVIII</span><span class="badge">On Steam</span></div>
-<p class="g-role"><span>My role</span>Gameplay and platform programmer</p><div class="g-links"><a class="btn" href="https://store.steampowered.com/app/4138940/Zero_One_Protocol/" target="_blank" rel="noopener">View on Steam</a></div></div>
-<div class="art"><img class="key" src="img/zo-key.webp" alt="Zero One Protocol key art" loading="lazy"><img class="st st-zo-chars" src="img/zo-chars.webp" alt="" aria-hidden="true" style="bottom:-40px;right:-24px;--w:200px;--r:0deg" loading="lazy"></div>
+<div class="g-main"><p class="g-info">Team of 5, 2025–2026</p><h3>Zero One Protocol</h3><p class="g-pitch">A co-op logic-gate puzzle platformer</p><div class="badges"><span class="badge">Finalist, GEMASTIK XVIII</span><span class="badge">On Steam</span></div>
+<p class="g-role"><span>My role</span>Gameplay and platform programmer</p><div class="g-links"><a class="btn" href="https://store.steampowered.com/app/4138940/Zero_One_Protocol/" target="_blank" rel="noopener">Play on Steam</a></div></div>
+<div class="art"><img class="key" src="img/zo-key.webp" alt="Zero One Protocol key art" loading="lazy"><button type="button" class="play" data-src="trailers/zero-one.mp4" data-name="Zero One Protocol" aria-label="Play Zero One Protocol trailer"><span><svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M8 5.5v13a1 1 0 0 0 1.5.86l11-6.5a1 1 0 0 0 0-1.72l-11-6.5A1 1 0 0 0 8 5.5Z"/></svg></span></button><img class="st st-zo-chars" src="img/zo-chars.webp" alt="" aria-hidden="true" style="bottom:-40px;right:-24px;--w:200px;--r:0deg" loading="lazy"></div>
 </div>
 <div class="g-mid">
 <div><ul class="pts"><li>Multi-gamepad co-op input with disconnect fallback</li><li>Steamworks.NET leaderboards and achievements</li><li>Character-swap mechanic built on object pooling</li><li>Builds for Windows, Steam Deck, macOS, Android and iOS</li></ul><p class="g-foot">Unity 6, C#, Input System, Cinemachine, Steamworks.NET</p></div>
-<div class="shots" style="--n:2"><button type="button" class="shot" data-full="img/zo-1.webp" aria-label="Zero One Protocol screenshot 1, open larger"><img src="img/zo-1.webp" alt="Zero One Protocol gameplay screenshot 1" loading="lazy"></button><button type="button" class="shot" data-full="img/zo-2.webp" aria-label="Zero One Protocol screenshot 2, open larger"><img src="img/zo-2.webp" alt="Zero One Protocol gameplay screenshot 2" loading="lazy"></button></div>
+<div class="shots"><div class="clip"><video src="clips/zo-1.mp4" muted loop playsinline preload="metadata" aria-label="Zero One Protocol gameplay clip 1"></video></div><div class="clip"><video src="clips/zo-2.mp4" muted loop playsinline preload="metadata" aria-label="Zero One Protocol gameplay clip 2"></video></div><button type="button" class="shot" data-full="img/zo-1.webp" aria-label="Zero One Protocol screenshot 1, open larger"><img src="img/zo-1.webp" alt="Zero One Protocol gameplay screenshot 1" loading="lazy"></button><button type="button" class="shot" data-full="img/zo-2.webp" aria-label="Zero One Protocol screenshot 2, open larger"><img src="img/zo-2.webp" alt="Zero One Protocol gameplay screenshot 2" loading="lazy"></button><button type="button" class="shot" data-full="img/zo-3.webp" aria-label="Zero One Protocol screenshot 3, open larger"><img src="img/zo-3.webp" alt="Zero One Protocol gameplay screenshot 3" loading="lazy"></button><button type="button" class="shot" data-full="img/zo-4.webp" aria-label="Zero One Protocol screenshot 4, open larger"><img src="img/zo-4.webp" alt="Zero One Protocol gameplay screenshot 4" loading="lazy"></button></div>
 </div>
 <details class="more"><summary>Read what I built in Zero One Protocol</summary><div class="more-in"><div><h4>The first prototype</h4><p>I wrote the original logic-gate prototype (AND, OR, NOT, XOR, doors and boxes) that the puzzle system grew from, then stayed on the project for 15 months and 191 commits.</p></div><div><h4>Two-player input</h4><p>Each player is bound to the keyboard, one specific gamepad, or touch controls. If a gamepad disconnects, that player falls back to the keyboard and switches back when it returns.</p></div><div><h4>The Converter</h4><p>Swaps a player between Zero and One by activating a pre-made copy of the other character with all input settings carried over, snapped to the ground before input turns on. Nothing is created mid-level and nobody falls through the floor.</p></div><div><h4>Steam and platforms</h4><p>Leaderboards for 15 levels plus total time (global, nearby and friends) and achievements, with scores queued until Steam finds the board. Build profiles for five platforms, a Steam Deck jump debounce and 120 Hz input polling on macOS.</p></div></div></details>
 </div></section>
 <section class="game" data-game="tt" id="ice-tea"><div class="wrap">
 <div class="g-top">
-<div class="g-main"><p class="g-info">Team of 5, 2025</p><h3>Ice Tea Tycoon</h3><p class="g-pitch">An iced-tea stand tycoon with a full customer simulation.</p><div class="badges"><span class="badge">1st Place, KMIPN VII 2025</span></div>
-<p class="g-role"><span>My role</span>Gameplay programmer, customer simulation</p><div class="g-links"><a class="btn" href="https://a-fair-studio.itch.io/ice-tea-tycoon" target="_blank" rel="noopener">View on itch.io</a></div></div>
-<div class="art"><img class="key" src="img/tt-key.webp" alt="Ice Tea Tycoon key art" loading="lazy"></div>
+<div class="g-main"><p class="g-info">Team of 5, 2025</p><h3>Ice Tea Tycoon</h3><p class="g-pitch">An iced-tea stand tycoon with a full customer simulation</p><div class="badges"><span class="badge">1st Place, KMIPN VII 2025</span></div>
+<p class="g-role"><span>My role</span>Gameplay programmer, customer simulation</p><div class="g-links"><a class="btn" href="https://a-fair-studio.itch.io/ice-tea-tycoon" target="_blank" rel="noopener">Play on itch.io</a></div></div>
+<div class="art"><img class="key" src="img/tt-key.webp" alt="Ice Tea Tycoon key art" loading="lazy"><button type="button" class="play" data-src="trailers/ice-tea.mp4" data-name="Ice Tea Tycoon" aria-label="Play Ice Tea Tycoon trailer"><span><svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M8 5.5v13a1 1 0 0 0 1.5.86l11-6.5a1 1 0 0 0 0-1.72l-11-6.5A1 1 0 0 0 8 5.5Z"/></svg></span></button></div>
 </div>
 <div class="g-mid">
 <div><ul class="pts"><li>Demand model driven by weather, price, popularity and ads</li><li>NavMesh customers who queue, check prices and react</li><li>Trash-combo mechanic that triggers customer rushes</li><li>Balancing tool that scored all 1,400 recipe combinations</li></ul><p class="g-foot">Unity 6, C#, NavMesh, Timeline, DOTween</p></div>
-<div class="shots" style="--n:2"><button type="button" class="shot" data-full="img/tt-1.webp" aria-label="Ice Tea Tycoon screenshot 1, open larger"><img src="img/tt-1.webp" alt="Ice Tea Tycoon gameplay screenshot 1" loading="lazy"></button><button type="button" class="shot" data-full="img/tt-2.webp" aria-label="Ice Tea Tycoon screenshot 2, open larger"><img src="img/tt-2.webp" alt="Ice Tea Tycoon gameplay screenshot 2" loading="lazy"></button></div>
+<div class="shots"><div class="clip"><video src="clips/tt-1.mp4" muted loop playsinline preload="metadata" aria-label="Ice Tea Tycoon gameplay clip 1"></video></div><div class="clip"><video src="clips/tt-2.mp4" muted loop playsinline preload="metadata" aria-label="Ice Tea Tycoon gameplay clip 2"></video></div><button type="button" class="shot" data-full="img/tt-1.webp" aria-label="Ice Tea Tycoon screenshot 1, open larger"><img src="img/tt-1.webp" alt="Ice Tea Tycoon gameplay screenshot 1" loading="lazy"></button><button type="button" class="shot" data-full="img/tt-2.webp" aria-label="Ice Tea Tycoon screenshot 2, open larger"><img src="img/tt-2.webp" alt="Ice Tea Tycoon gameplay screenshot 2" loading="lazy"></button><button type="button" class="shot" data-full="img/tt-3.webp" aria-label="Ice Tea Tycoon screenshot 3, open larger"><img src="img/tt-3.webp" alt="Ice Tea Tycoon gameplay screenshot 3" loading="lazy"></button><button type="button" class="shot" data-full="img/tt-4.webp" aria-label="Ice Tea Tycoon screenshot 4, open larger"><img src="img/tt-4.webp" alt="Ice Tea Tycoon gameplay screenshot 4" loading="lazy"></button></div>
 </div>
 <details class="more"><summary>Read what I built in Ice Tea Tycoon</summary><div class="more-in"><div><h4>Demand model</h4><p>Each day’s customer count comes from weather, price, popularity and advertising, with price sensitivity that rises sharply and advertising that has diminishing returns.</p></div><div><h4>Customers</h4><p>NavMesh customers walk up, join the queue, check the price, buy, and react to how good the recipe is.</p></div><div><h4>Trash combo</h4><p>Clearing trash in a streak builds a combo that triggers a rush of extra customers.</p></div><div><h4>Balancing tool</h4><p>A tool that scored all 1,400 recipe combinations, used to tune recipe rewards and pricing.</p></div></div></details>
 </div></section>
 
 <div class="sec-title" id="tools"><div class="wrap"><h2>Unity tools</h2></div></div>
-<div class="wrap"><div class="cards"><article class="card" data-game="ac" id="auto-collider"><h3>Auto Collider</h3><p class="c-pitch">Generates the cheapest collider that fits, in 3D and 2D.</p><ul class="pts"><li>Automatic choice between primitives, hulls and convex parts</li><li>Own convex decomposition, no native plugin</li><li>Scene-view editing, 223 tests, 11 releases</li></ul><div class="c-foot"><a class="btn" href="https://github.com/MFahril/auto-collider" target="_blank" rel="noopener">View on GitHub</a></div></article><article class="card" data-game="lt" id="litmotion"><h3>LitMotion Tween Editor</h3><p class="c-pitch">Build and scrub tween animations on an Inspector timeline.</p><ul class="pts"><li>Edit-mode preview that matches the game exactly</li><li>24 tween types and 14 presets</li><li>Awaitable runtime API, 390+ tests</li></ul><div class="c-foot"><a class="btn" href="https://github.com/MFahril/LitMotion-edit-in-inspector" target="_blank" rel="noopener">View on GitHub</a></div></article></div></div>
+<section class="game tool" data-game="ut" id="auto-collider"><div class="wrap">
+<div class="g-top">
+<div class="g-main"><p class="g-info">Unity editor package, version 1.3</p><h3>Auto Collider</h3><p class="g-pitch">Generates the cheapest collider that fits, in 3D and 2D</p><div class="badges"><span class="badge">Unity 6</span><span class="badge">3D and 2D</span><span class="badge">247 tests</span></div>
+<p class="g-role"><span>What it does</span>Select your props, press one shortcut, and every object gets a fitted collider</p><div class="g-links"><a class="btn" href="https://github.com/MFahril/auto-collider" target="_blank" rel="noopener">View on GitHub</a></div></div>
+<div class="art"><button type="button" class="shot art-shot" data-full="img/ac-key.webp" aria-label="Auto Collider screenshot, open larger"><img class="key" src="img/ac-key.webp" alt="Auto Collider in the Unity Scene view, fitting colliders to 3D props" loading="lazy"></button></div>
+</div>
+<div class="g-mid">
+<div><ul class="pts"><li>Picks per mesh between a primitive, a convex hull, convex parts or an optimized mesh, and explains why</li><li>Own convex decomposition in Burst C#, no native plugins</li><li>Edit in the Scene view with handles, painting and snapping, one undo per edit</li><li>Collider Doctor finds physics mistakes in a scene and fixes them in one click</li></ul><p class="g-foot">Unity 6, C#, Burst, UPM package</p></div>
+<div class="shots"><button type="button" class="shot" data-full="img/ac-2d.webp" aria-label="Auto Collider fitting 2D colliders to sprites, open larger"><img src="img/ac-t1.webp" alt="Auto Collider fitting 2D colliders to sprites" loading="lazy"></button><button type="button" class="shot" data-full="img/ac-key.webp" aria-label="Auto Collider edit tool on a 3D collider, open larger"><img src="img/ac-t2.webp" alt="Auto Collider edit tool on a 3D collider" loading="lazy"></button></div>
+</div>
+<details class="more"><summary>Read what Auto Collider does</summary><div class="more-in"><div><h4>Generate</h4><p>Select your props and press Shift+Alt+C. The Auto strategy chooses per mesh: a primitive when one fits, a convex hull for convex shapes, convex parts for concave shapes on moving bodies and an optimized mesh for static ones. A batch of 1,000 props takes a couple of seconds and undoes in one step.</p></div><div><h4>Optimize</h4><p>The Mesh Collider Optimizer analyzes existing mesh colliders, shows an error heatmap and simplifies them. Originals are kept, so you can always restore them.</p></div><div><h4>Edit in the Scene view</h4><p>An edit tool with face handles, move, rotate, vertex snapping, mirror and merge, plus a paint mode that turns painted triangles into a collider. Every operation is one undo step.</p></div><div><h4>2D, runtime and checks</h4><p>Sprites are traced from their pixels, tilemaps become one baked polygon, and a Collider Group reports which part of an object was hit. Collider Doctor scans for mistakes that break or slow down physics.</p></div></div></details>
+</div></section>
+<section class="game tool" data-game="ut" id="litmotion"><div class="wrap">
+<div class="g-top">
+<div class="g-main"><p class="g-info">Unity editor package, version 0.1</p><h3>LitMotion Tween Editor</h3><p class="g-pitch">Build and scrub tween animations on a timeline in the Inspector</p><div class="badges"><span class="badge">Unity 6</span><span class="badge">Built on LitMotion</span><span class="badge">24 tween types</span></div>
+<p class="g-role"><span>What it does</span>Author, chain and preview animations without writing code</p><div class="g-links"><a class="btn" href="https://github.com/MFahril/LitMotion-edit-in-inspector" target="_blank" rel="noopener">View on GitHub</a></div></div>
+<div class="art"><button type="button" class="shot art-shot" data-full="img/lt-key.webp" aria-label="LitMotion Tween Editor screenshot, open larger"><img class="key" src="img/lt-key.webp" alt="The LitMotion Tween Editor timeline and clip settings in the Unity Inspector" loading="lazy"></button></div>
+</div>
+<div class="g-mid">
+<div><ul class="pts"><li>Edit-mode preview that matches the game exactly</li><li>24 tween types and 14 presets</li><li>Awaitable runtime API, 390+ tests</li><li>Extension channels for your own animated properties</li></ul><p class="g-foot">Unity 6, C#, LitMotion 2, uGUI, TextMeshPro, URP</p></div>
+<div class="shots"><button type="button" class="shot" data-full="img/lt-key.webp" aria-label="Tween Player timeline with clips on tracks, open larger"><img src="img/lt-t1.webp" alt="Tween Player timeline with clips on tracks" loading="lazy"></button><button type="button" class="shot" data-full="img/lt-key.webp" aria-label="Settings of the selected Move clip, open larger"><img src="img/lt-t2.webp" alt="Settings of the selected Move clip" loading="lazy"></button></div>
+</div>
+<details class="more"><summary>Read what LitMotion Tween Editor does</summary><div class="more-in"><div><h4>Timeline</h4><p>Clips sit on tracks in the Inspector. Drag to move, pull the edges to trim, scrub, and press Play to preview in the editor without entering Play mode.</p></div><div><h4>Clip settings</h4><p>Each clip has a type, a target, values in absolute, current, relative or offset mode, timing, loops and an easing curve you can see.</p></div><div><h4>Types and presets</h4><p>24 tween types and 14 presets. A newly added step already does something visible, at a sensible size for 3D objects and UI.</p></div><div><h4>Play it from code</h4><p>One line on the Tween Player plays an animation by its ID. uGUI, TextMeshPro and URP support turn on by themselves, and your own channels plug in through extensions.</p></div></div></details>
+</div></section>
 
 <div class="sec-title" id="more"><div class="wrap"><h2>More projects</h2></div></div>
-<div class="wrap"><div class="cards three"><article class="card small" data-game="it" id="infinite-tower"><p class="g-info">Team of 5, 2025</p><h3>The Infinite Tower</h3><p class="c-pitch">Rune puzzle engine with ordered chain reactions, about 72% of the code.</p></article><article class="card small" data-game="go" id="green-ops"><p class="g-info">Team of 5, 2025</p><h3>Green Ops</h3><p class="c-pitch">Diggable trash terrain, sorting plant and excavator physics.</p></article><article class="card small" data-game="ts" id="timesweeper"><p class="g-info">Solo game jam, 2026</p><h3>Timesweeper</h3><p class="c-pitch">Minesweeper with boss rules and a custom tile shader.</p></article><article class="card small" data-game="nu" id="numo"><p class="g-info">Team of 2, 2025</p><h3>Numo</h3><p class="c-pitch">Mobile math card puzzle with always-solvable levels.</p></article><article class="card small" data-game="ti" id="torch-it"><p class="g-info">Team of 3, 5 days, 2025</p><h3>Torch It!</h3><p class="c-pitch">Torch burn mechanic, rain and wind hazards, player controller.</p><div class="c-foot"><a class="btn" href="https://a-fair-studio.itch.io/torch-it" target="_blank" rel="noopener">View on itch.io</a></div></article></div></div>
+<div class="wrap"><div class="cards three"><article class="card small" data-game="it" id="infinite-tower"><p class="g-info">Team of 5, 2025</p><h3>The Infinite Tower</h3><p class="c-pitch">Rune puzzle engine with ordered chain reactions, about 72% of the code</p></article><article class="card small" data-game="go" id="green-ops"><p class="g-info">Team of 5, 2025</p><h3>Green Ops</h3><p class="c-pitch">Diggable trash terrain, sorting plant and excavator physics</p></article><article class="card small" data-game="ts" id="timesweeper"><p class="g-info">Solo game jam, 2026</p><h3>Timesweeper</h3><p class="c-pitch">Minesweeper with boss rules and a custom tile shader</p><div class="c-foot"><a class="btn" href="https://mfahril.itch.io/another-minesweeper" target="_blank" rel="noopener">Play on itch.io</a></div></article><article class="card small" data-game="nu" id="numo"><p class="g-info">Team of 2, 2025</p><h3>Numo</h3><p class="c-pitch">Mobile math card puzzle with always-solvable levels</p></article><article class="card small" data-game="ti" id="torch-it"><p class="g-info">Team of 3, 5 days, 2025</p><h3>Torch It!</h3><p class="c-pitch">Torch burn mechanic, rain and wind hazards, player controller</p><div class="c-foot"><a class="btn" href="https://a-fair-studio.itch.io/torch-it" target="_blank" rel="noopener">Play on itch.io</a></div></article></div></div>
 
 <section class="contact" id="contact"><div class="wrap">
-<h2>Let’s talk.</h2>
-<p>Open to Unity programming internships.</p>
+<h2>Let’s talk</h2>
+<p>Open to Unity programming internships</p>
 <ul class="links">
 <li><span>Email</span><a href="mailto:m.fahrililmi99@gmail.com">m.fahrililmi99@gmail.com</a></li>
 <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/m-fahril-ilmi/" target="_blank" rel="noopener">linkedin.com/in/m-fahril-ilmi</a></li>
@@ -258,9 +320,40 @@ footer{padding:0 0 40px;color:var(--muted);font-size:13.5px}
 </ul>
 </div></section>
 </main>
-<footer><div class="wrap">Art, models and audio belong to their creators.</div></footer>
+<footer><div class="wrap">Art, models and audio belong to their creators</div></footer>
 <dialog class="lb" id="lb" aria-label="Screenshot"><img alt=""><button type="button">Close</button></dialog>
 <script>
+(function(){
+  var vs=document.querySelectorAll('.clip video');
+  if(!vs.length||!('IntersectionObserver' in window)||window.matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(e.isIntersecting){var p=e.target.play();if(p&&p.catch)p.catch(function(){});}else e.target.pause();
+    });
+  },{threshold:.25});
+  vs.forEach(function(v){io.observe(v);});
+})();
+(function(){
+  var open=null;
+  function close(){if(!open)return;open.v.remove();open.b.hidden=false;open=null;}
+  document.querySelectorAll('.play').forEach(function(b){
+    b.addEventListener('click',function(){
+      close();
+      var v=document.createElement('video');
+      v.className='trailer';v.src=b.getAttribute('data-src');v.controls=true;v.autoplay=true;v.playsInline=true;v.preload='auto';
+      v.setAttribute('aria-label',b.getAttribute('data-name')+' trailer');
+      v.addEventListener('ended',close);
+      b.parentNode.appendChild(v);b.hidden=true;open={v:v,b:b};
+      var p=v.play();if(p&&p.catch)p.catch(function(){});
+    });
+  });
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){if(!e.isIntersecting&&open&&open.v.parentNode===e.target)open.v.pause();});
+    },{threshold:.2});
+    document.querySelectorAll('.art').forEach(function(a){io.observe(a);});
+  }
+})();
 (function(){
   var b=document.getElementById('themeBtn'),r=document.documentElement;
   function cur(){var t=r.getAttribute('data-theme');return t==='dark'?'dark':'light';}
@@ -273,6 +366,32 @@ footer{padding:0 0 40px;color:var(--muted);font-size:13.5px}
     b.addEventListener('click',function(){ im.src=b.getAttribute('data-full'); im.alt=b.querySelector('img').alt; d.showModal(); });
   });
   d.addEventListener('click',function(){ d.close(); });
+})();
+(function(){
+  if(!('IntersectionObserver' in window)||(window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches))return;
+  var groups=document.querySelectorAll('.hl-grid,.hl-cols,.g-top,.g-mid');
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(!e.isIntersecting)return;
+      var g=e.target;io.unobserve(g);
+      g.querySelectorAll('.rv,.st.js').forEach(function(el){el.classList.add('in');});
+      var a=g.querySelector('.art-shot');if(a)a.classList.add('scan');
+    });
+  },{rootMargin:'0px 0px -12% 0px',threshold:.12});
+  groups.forEach(function(g){
+    var n=0,k=0;
+    g.querySelectorAll('.hl-item,.sub-h,.rows li,.skills > div,.g-main > *,.art > .key,.art-shot,.pts li,.shots > *').forEach(function(el){
+      el.classList.add('rv');el.style.setProperty('--i',Math.min(n++,9));
+    });
+    g.querySelectorAll('.st').forEach(function(el){
+      el.classList.add('js');el.style.setProperty('--i',k++ +2);
+    });
+    io.observe(g);
+  });
+  document.querySelectorAll('.art-shot').forEach(function(b){
+    b.addEventListener('mouseenter',function(){b.classList.add('scan');});
+    b.addEventListener('animationend',function(e){if(e.animationName==='scan')b.classList.remove('scan');});
+  });
 })();
 </script>
 </body>
